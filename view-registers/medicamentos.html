@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Bootstrap 4</title>
+    <title>Crear Medicamentos</title>
     <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
-<body class ="container d-flex flex-column justify-content-center" style="height: 100vh;">
+<body class="container d-flex flex-column justify-content-center" style="height: 100vh;">
     <main class="container">
         <div class="row g-3 form-control">
-        <h1 class="mb-4"> Crear Medicamentos </h1>
+            <h1 class="mb-4"> Crear Medicamentos </h1>
         </div>
 
-        <form class="row g-3 form-control" action="/create-registers/medicamento.php" method="post">
+        <form class="row g-3 form-control" action="../create-registers/medicamento.php" method="post">
             <div class="col-auto">
-                <label for="staticEmail2" >Nombre del medicamento</label>
+                <label for="staticEmail2">Nombre del medicamento</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa el nombre del medicamento">
             </div>
             <div class="col-auto">
-                <label for="staticEmail2" >Precio del medicamento</label>
+                <label for="staticEmail2">Precio del medicamento</label>
                 <input type="text" class="form-control" id="precio" name="precio" placeholder="Ingresa el precio">
             </div>
-             <div class="col-auto">
-                <label for="staticEmail2" >Lote del medicamento</label>
+            <div class="col-auto">
+                <label for="staticEmail2">Lote del medicamento</label>
                 <input type="text" class="form-control" id="lote" name="lote" placeholder="Ingresa el lote">
             </div>
             <div class="col-auto w-100 d-flex justify-content-center">
                 <input class="btn btn-primary mb-3" id="ingresar" type="submit" value="Registrar">
             </div>
-            </form>
+        </form>
 
-            <div class="col-auto w-100 d-flex justify-content-center">
+        <div class="col-auto w-100 d-flex justify-content-center">
             <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Buscar</button>
-            </div>
+        </div>
 
         <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -52,7 +53,7 @@
                     <div class="modal-body">
                         <div class="row g-3 form-control">
                             <div class="col-auto">
-                                <label for="staticEmail2" >Codigo del medicamento</label>
+                                <label for="staticEmail2">Codigo del medicamento</label>
                                 <input type="text" class="form-control" id="user" name="user" placeholder="Ingresa el codigo del medicamento">
                             </div>
                         </div>
@@ -78,15 +79,15 @@
                     <div class="modal-body">
                         <div class="row g-3 form-control">
                             <div class="col-auto">
-                                <label for="staticEmail2" >Nombre del medicamento</label>
+                                <label for="staticEmail2">Nombre del medicamento</label>
                                 <input type="text" class="form-control" id="user" name="user">
                             </div>
                             <div class="col-auto">
-                                <label for="staticEmail2" >Precio del medicamento</label>
+                                <label for="staticEmail2">Precio del medicamento</label>
                                 <input type="text" class="form-control" id="user" name="user">
                             </div>
                             <div class="col-auto">
-                                <label for="staticEmail2" >Lote del medicamento</label>
+                                <label for="staticEmail2">Lote del medicamento</label>
                                 <input type="text" class="form-control" id="user" name="user">
                             </div>
                         </div>
@@ -107,6 +108,5 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
-
-

@@ -41,7 +41,7 @@
             .done(function (res){
                 console.log("exito "+res);
                 if(res == "activo"){
-                    location.href = "home.php";
+                    location.href = "./view-registers/menu.html";
                 } else{
                     alert("El usuario esta inactivo");
                 }
@@ -53,7 +53,6 @@
                 console.log("complete");
             });
         });
-
     </script>
 
 </body>

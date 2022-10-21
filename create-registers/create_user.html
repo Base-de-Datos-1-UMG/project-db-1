@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacias UMG</title>
     <!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
-<body class ="container d-flex flex-column justify-content-center" style="height: 100vh;">
-    
+
+<body class="container d-flex flex-column justify-content-center" style="height: 100vh;">
+
     <h1 class="mb-4">Creacion de usuario</h1>
-    <form class="row g-3 form-control" action="./prueba.php" method="post">
+    <form class="row g-3 form-control" action="./insert_persona.php" method="post">
         <div class="col-auto">
-            <label for="staticEmail2" >Primer nombre</label>
+            <label for="staticEmail2">Primer nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
         </div>
         <div class="col-auto">
-            <label for="staticEmail2" >Segundo nomre</label>
+            <label for="staticEmail2">Segundo nombre</label>
             <input type="text" class="form-control" id="segnombre" name="segnombre" placeholder="Ingresa tu nombre">
         </div>
-         <div class="col-auto">
-            <label for="staticEmail2" >Primer apellido</label>
+        <div class="col-auto">
+            <label for="staticEmail2">Primer apellido</label>
             <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
         </div>
-         <div class="col-auto">
-            <label for="staticEmail2" >Segundo apellido</label>
+        <div class="col-auto">
+            <label for="staticEmail2">Segundo apellido</label>
             <input type="text" class="form-control" id="segapellido" name="segapellido" placeholder="Ingresa tu apellido">
         </div>
         <div class="col-auto">
-            <label for="staticEmail2" >NIT</label>
+            <label for="staticEmail2">NIT</label>
             <input type="text" class="form-control" id="nit" name="nit" placeholder="Ingresa tu nit">
         </div>
         <div class="col-auto">
-            <label for="staticEmail2" >DPI</label>
+            <label for="staticEmail2">DPI</label>
             <input type="text" class="form-control" id="dpi" name="dpi" placeholder="Ingresa tu dpi">
         </div>
         <div class="col-auto">
-            <label for="staticEmail2" >Carnet</label>
+            <label for="staticEmail2">Carnet</label>
             <input type="text" class="form-control" id="carnet" name="carnet" placeholder="Ingresa tu carnet">
         </div>
         <div class="col-auto">
@@ -57,4 +59,5 @@
         </div>
     </form>
 </body>
+
 </html>

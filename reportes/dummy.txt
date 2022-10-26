@@ -1,0 +1,5 @@
+
+por cuestiones de no cargar librerias a el repositorio
+en este archivo se adjunta el link hacia la libreria 
+que genera los pdf del proyecto
+http://www.fpdf.org

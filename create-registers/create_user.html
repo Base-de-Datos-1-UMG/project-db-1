@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
-<body class="container d-flex flex-column justify-content-center" style="height: 100vh;">
+<body class="container d-flex flex-column justify-content-center" style="min-height: 100vh;">
 
     <h1 class="mb-4">Creacion de usuario</h1>
     <form class="row g-3 form-control" action="./insert_persona.php" method="post">
@@ -33,20 +33,20 @@
         </div>
         <div class="col-auto">
             <label for="staticEmail2">NIT</label>
-            <input type="text" class="form-control" id="nit" name="nit" placeholder="Ingresa tu nit">
+            <input type="text" class="form-control" id="nit" name="nit" placeholder="Ingresa tu nit" maxlength="10">
         </div>
         <div class="col-auto">
             <label for="staticEmail2">DPI</label>
-            <input type="text" class="form-control" id="dpi" name="dpi" placeholder="Ingresa tu dpi">
+            <input type="text" class="form-control" id="dpi" name="dpi" placeholder="Ingresa tu dpi" maxlength="15">
         </div>
         <div class="col-auto">
             <label for="staticEmail2">Carnet</label>
-            <input type="text" class="form-control" id="carnet" name="carnet" placeholder="Ingresa tu carnet">
+            <input type="text" class="form-control" id="carnet" name="carnet" placeholder="Ingresa tu carnet" maxlength="10">
         </div>
-        <div class="col-auto">
-            <label for="inputPassword2">Contraseña</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña">
-        </div>
+        <!--div class="col-auto">
+            <label for="inputPassword2">Contraseña</label-->
+        <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña" hidden>
+        <!--/div-->
         <div class="col-auto">
             <label for="inputPassword2">Genero</label>
             <select class="form-select" aria-label="Default select example" name="genero">
@@ -54,8 +54,9 @@
   			<option value="2">Femenino</option>
 			</select>
         </div>
-        <div class="col-auto w-100 d-flex justify-content-center">
-            <input class="btn btn-primary mb-3" id="entrar" type="submit" value="Registrar">
+        <div class="col-auto w-100 d-flex" style="justify-content: space-around;">
+            <input class="btn btn-success mb-3" id="entrar" type="submit" value="Registrar">
+            <a href="../view-registers/menu.html" class="btn btn-primary mb-3">Regresar al menu</a>
         </div>
     </form>
 </body>

@@ -34,7 +34,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="container pb-3">
+    <h1 class="mt-3 mb-3">Modificar persona</h1>
     <!-- aca pasamos nuevamente por la url el id de la persona -->
     <form <?php echo"action='./update_persona.php?IDPERSONA=".$idpersona."'"; ?> method="post">
     <div class="col-auto">
@@ -58,20 +59,20 @@
         </div>
         <div class="col-auto">
             <label for="staticEmail2">NIT</label>
-            <input type="text" class="form-control" id="nit" name="nit" placeholder="Ingresa tu nit" <?php echo"value='".$result['NIT']."'"; ?>>
+            <input type="text" class="form-control" id="nit" name="nit" placeholder="Ingresa tu nit" <?php echo"value='".$result['NIT']."'"; ?> maxlength="10">
         </div>
         <div class="col-auto">
             <label for="staticEmail2">DPI</label>
-            <input type="text" class="form-control" id="dpi" name="dpi" placeholder="Ingresa tu dpi" <?php echo"value='".$result['DPI']."'"; ?>>
+            <input type="text" class="form-control" id="dpi" name="dpi" placeholder="Ingresa tu dpi" <?php echo"value='".$result['DPI']."'"; ?> maxlength="15">
         </div>
         <div class="col-auto">
             <label for="staticEmail2">Carnet</label>
-            <input type="text" class="form-control" id="carnet" name="carnet" placeholder="Ingresa tu carnet" <?php echo"value='".$result['CARNET']."'"; ?>>
+            <input type="text" class="form-control" id="carnet" name="carnet" placeholder="Ingresa tu carnet" <?php echo"value='".$result['CARNET']."'"; ?> maxlength="10">
         </div>
-        <div class="col-auto">
-            <label for="inputPassword2">Contraseña</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña">
-        </div>
+        <!--div class="col-auto">
+            <label for="inputPassword2">Contraseña</label-->
+            <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña" hidden>
+        <!--/div-->
         <div class="col-auto">
             <label for="inputPassword2">Genero</label>
             <select class="form-select" aria-label="Default select example" name="genero">
@@ -79,8 +80,9 @@
                 <option value="2">Femenino</option>
 		    </select>
         </div>
-        <div class="col-auto w-100 d-flex justify-content-center">
-            <input class="btn btn-primary mb-3" id="entrar" type="submit" value="Registrar">
+        <div class="col-auto w-100 d-flex" style="justify-content: space-around;">
+            <input class="btn btn-success mb-3 mt-3" id="entrar" type="submit" value="Modificar">
+            <a href="./personas.php" class="btn btn-primary mb-3 mt-3">Volver a personas</a>
         </div>
     </form>
 
